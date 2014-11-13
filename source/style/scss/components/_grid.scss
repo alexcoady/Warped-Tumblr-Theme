@@ -1,0 +1,28 @@
+/**
+ *
+ */
+.Grid {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+
+  padding: 0;
+  overflow: hidden;
+}
+
+
+/**
+ *
+ */
+.Grid-item {
+  
+  // For non-flex
+  float: left; 
+
+  &:nth-child(2n + 2) {
+    // For non-flex
+    clear: right;
+  }
+}

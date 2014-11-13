@@ -1,0 +1,21 @@
+{
+  "title": "Persol API Tumblr",
+  "authors": [
+    "Alex Coady <alexcoady@stinkdigital.com>"
+  ],
+  "devDependencies": {
+    "gulp": "~3.7.0",
+    "gulp-autoprefixer": "0.0.7",
+    "gulp-browserify": "~0.5.0",
+    "gulp-ruby-sass": "~0.5.0",
+    "browser-sync": "~0.9.1",
+    "gulp-jst-concat": "0.0.1",
+    "gulp-svgstore": "0.0.7"
+  },
+  "dependencies": {
+    "backbone": "~1.1.2",
+    "jquery": "~2.1.1",
+    "underscore": "~1.6.0",
+    "imagesloaded": "~3.1.8"
+  }
+}

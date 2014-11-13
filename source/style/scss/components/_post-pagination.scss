@@ -1,0 +1,42 @@
+.PostPagination {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+
+    background: $color-grey-dark;
+    transition: background;
+    transition-duration: 350ms;
+    cursor: pointer;
+    color: $color-grey-light;
+
+    &:hover {
+      background: $color-grey;
+      // color: $color-grey;
+    }
+}
+
+
+.PostPagination-title {
+  display: block;
+  margin-bottom: 2 * $spacing;
+
+  font-size: 1.25em;
+  font-style: italic;
+}
+
+
+.PostPagination-postTitle {
+
+  font-size: 2em;
+  font-weight: bold;
+  line-height: 1.2em;
+  margin-bottom: 3 * $spacing;
+
+  @media #{$mq-medium} {
+    font-size: 2.5em
+  }
+
+  @media #{$mq-large} {
+    font-size: 3em;
+  }
+}

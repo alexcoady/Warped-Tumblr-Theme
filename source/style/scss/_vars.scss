@@ -1,0 +1,44 @@
+
+/**
+ *  Colours
+ */
+$color-black:             #000;
+$color-white:             #FFF;
+
+$color-grey-dark:         #3b3b3b;
+$color-grey-mid:          #3f3f3f;
+$color-grey:              #acacac;
+$color-grey-light:        #dedede;
+$color-grey-pale:         #fafafa;
+
+$color-gold:              #ffc500;  
+$color-yellow:            $color-gold;  
+
+
+/**
+ *  Typefaces
+ */
+$font-serif:              'Merriweather', serif;
+$font-sans:               'Oxygen', sans-serif;
+
+
+/**
+ *  Spacing
+ */
+$spacing:                 10px;
+
+$width-menu:              200px;
+
+
+/**
+ *  Media queries
+ */
+
+$mq-small:                "only screen and (max-width: 28em)";
+$mq-medium:               "only screen and (min-width: 37.5em)";
+$mq-med-large:            "only screen and (min-width: 56.25em)";
+$mq-large:                "only screen and (min-width: 75em)";
+$mq-vLarge:               "only screen and (min-width: 92.5em)";
+
+$mq-y-mobile-landscape:   "only screen and (max-height: 25em)";
+$mq-y-menu:               "only screen and (max-height: 40em)";

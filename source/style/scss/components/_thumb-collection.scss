@@ -1,0 +1,207 @@
+.ThumbCollection {
+    overflow: hidden;
+}
+
+.ThumbCollection-item {
+  
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.ThumbCollection:not(.ThumbCollection--dynamic) {
+
+  .ThumbCollection-item {
+    @media #{$mq-medium} {
+      width: 50%;
+      width: calc(50% - 4px); // temp hack
+    }
+  }
+
+}
+
+
+.ThumbCollection--fixed:not(.ThumbCollection--dynamic) {
+
+  .ThumbCollection-item {
+    
+    margin-bottom: 30px;
+    width: 100%;
+    float: left; // temp hack
+
+    @media #{$mq-medium} {
+      width: 50%;
+      width: calc(50% - 10px);
+
+      &:nth-child(2n+1) {
+        clear: left;
+        margin-right: 0;
+        margin-right: calc(0% + 20px);
+      }
+    }
+
+    @media #{$mq-med-large} {
+      width: 33.33%;
+      width: calc( 33.33% - 20px );
+
+      &:nth-child(2n+1) {
+        clear: none;
+        margin-right: 0;
+      }
+
+      &:nth-child(3n+1) {
+        clear: left;
+        margin-right: 0;
+        margin-right: calc(0% + 30px);
+      }
+      &:nth-child(3n+2) {
+        margin-right: calc(0% + 30px);
+      }
+    }
+  }
+}
+
+
+.ThumbCollection--tagged {
+
+}
+
+
+.ThumbCollection--search {
+
+}
+
+
+
+
+// /**
+//  *
+//  */
+// .ThumbCollection {
+//   overflow: hidden;
+// }
+
+
+// /**
+//  *
+//  */
+// .ThumbCollection-item {
+//   display: block;
+//   width: 100%;
+//   margin-bottom: 8px;
+//   opacity: 1;
+  
+//   @media #{$mq-med-large} {
+//     width: 49.5%;
+//     float: left;
+//   }
+
+//   @media #{$mq-large} {
+    
+//   }
+// }
+
+
+// /**
+//  *
+//  */
+// .ThumbCollection-inner {
+//   padding: 0;
+// }
+
+// $delay-default: 0ms;
+// $delay-addition: 100ms;
+
+// /**
+//  *
+//  */
+// .ThumbCollection--home {
+
+//   .ThumbCollection-item {
+//     transform: translate(0) scale(1);
+//     transition-property: transform, opacity;
+//     transition-duration: 1000ms;
+
+//     &:nth-child(0) {
+//       transition-delay: $delay-default + (2 * $delay-addition);
+//     }
+//     &:nth-child(1) {
+//       transition-delay: $delay-default + (3 * $delay-addition);
+//     }
+//     &:nth-child(2) {
+//       transition-delay: $delay-default + (4 * $delay-addition);
+//     }
+//     &:nth-child(3) {
+//       transition-delay: $delay-default + (5 * $delay-addition);
+//     }
+//     &:nth-child(4) {
+//       transition-delay: $delay-default + (6 * $delay-addition);
+//     }
+//     &:nth-child(5) {
+//       transition-delay: $delay-default + (7 * $delay-addition);
+//     }
+//   }
+
+//   &.carousel-open {
+
+//     .ThumbCollection-item {
+
+//       opacity: 0;
+//       transform: translate3d(0px, 600px, 0px) scale(.95);
+
+//       &:nth-child(0) {
+//         transition-delay: $delay-default + 700ms - (2 * $delay-addition);
+//       }
+//       &:nth-child(1) {
+//         transition-delay: $delay-default + 700ms - (3 * $delay-addition);
+//       }
+//       &:nth-child(2) {
+//         transition-delay: $delay-default + 700ms - (4 * $delay-addition);
+//       }
+//       &:nth-child(3) {
+//         transition-delay: $delay-default + 700ms - (5 * $delay-addition);
+//       }
+//       &:nth-child(4) {
+//         transition-delay: $delay-default + 700ms - (6 * $delay-addition);
+//       }
+//       &:nth-child(5) {
+//         transition-delay: $delay-default + 700ms - (7 * $delay-addition);
+//       }
+//     }
+//   }
+    
+//   .ThumbCollection-logo {
+//     display: block;
+//     margin: 0 auto 90px;
+//     width: 114px;
+//   }
+// }
+
+
+// /**
+//  *
+//  */
+// .ThumbCollection--tagged {
+
+//   transform: translate3d(0px, 300px, 0);
+//   transition: transform 400ms;
+
+//   &.is-active {
+//     transform: translate(0);
+//   }
+
+//   .ThumbCollection-item {
+
+//     margin-bottom: 25px;
+
+//     @media #{$mq-medium} {
+//       width: 48%;
+//       margin-left: 0;
+//     }
+
+//     @media #{$mq-large} {
+//       width: 32%;
+//       margin-left: 0;
+//     }
+//   }
+// }
+

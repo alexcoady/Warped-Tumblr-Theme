@@ -1,0 +1,14 @@
+{
+  "name": "Persol-API",
+  "version": "0.0.1",
+  "authors": [
+    "Alex Coady <alexcoady@stinkdigital.com>"
+  ],
+  "main": "build/index.html",
+  "private": true,
+  "dependencies": {
+    "normalize-scss": "~3.0.1",
+    "underscore": "~1.6.0",
+    "greensock": "1.11.4"
+  }
+}

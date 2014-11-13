@@ -1,0 +1,70 @@
+.Notes {}
+
+/* List (OL) */
+.Notes .notes {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid $color-grey-light;
+  padding-top: 0.3em;
+}
+
+/* List item (LI) */
+.Notes .note,
+.Notes-reblogged {
+  margin-bottom: 0.3em;
+  overflow: hidden;
+  clear: both;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid $color-grey-light;
+}
+
+.Notes-reblogged {
+  border-bottom: 0 none;
+  padding-bottom: 0;
+}
+
+.Notes .note blockquote {
+  clear: both;
+  padding: .5em 0;
+  margin: 0;
+  margin-left: 50px;
+}
+
+/* Link with image */
+.Notes .avatar_frame {
+  display: block;
+  margin-right: 0.5em;
+  width: 38px;
+  height: 38px;
+  float: left;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.Notes .action {
+  display: block;
+  float: left;
+  line-height: 38px;
+
+  a {
+    transition: color 150ms;
+    color: $color-black;
+  }
+}
+
+.mousemove {
+  .Notes .action {
+    a:hover {
+      color: $color-yellow;
+    }
+  }
+}
+
+.Notes-reblogged {
+  display: block;
+  // margin-bottom: 50px;
+}

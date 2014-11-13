@@ -1,0 +1,138 @@
+.Navbar {
+}
+
+.Navbar-inner {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+.Navbar-item {
+  flex-grow: 1;
+}
+
+.Navbar-item--menuToggle {
+}
+
+.Navbar-item--close {
+  text-align: right;
+  color: $color-white;
+
+  .Close {
+    float: right;
+  }
+}
+
+.Navbar-item--title {
+  text-align: center;
+}
+
+.Navbar-item--logo {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  margin-left: -57px;
+}
+
+.Navbar-item--search {
+}
+
+.Navbar-item--tagCollection {
+  flex-grow: 7;
+}
+
+
+.Navbar-item--tagCollection {
+
+  .TagCollection {
+    display: none;
+  }
+
+  @media #{$mq-medium} {
+
+    .TagCollection {
+      display: flex;
+    }
+
+    .TagMenuToggle {
+      display: none;
+    }
+  }
+}
+
+
+
+/**
+ *
+ *
+ */
+.Navbar-title {
+  text-transform: uppercase;
+  font-size: 1.2em;
+  font-family: $font-sans;
+  letter-spacing: 0.04em;
+
+  @media #{$mq-medium} {
+    font-size: 2em;
+  }
+
+  @media #{$mq-large} {
+
+  }
+}
+
+
+
+
+.Navbar--index {
+
+  
+}
+
+/**
+ *  Styles for the HOMEPAGE ONLY
+ *
+ *  Tricky because all listings have the *--index
+ *  prefix
+ */
+.Navbar--index:not(.Navbar--modal) {
+  border-bottom: 1px solid $color-grey-light;
+
+  .Navbar-inner {
+    border: 1px solid $color-grey-light;
+    border-width: 0 1px;
+  }
+
+  .MenuToggle {
+    float: none;
+  }
+
+  .Search {
+    float: none;
+  }
+}
+
+
+.Navbar--modal {
+  
+}
+
+
+.Navbar--tagged {
+  
+}
+
+
+.Navbar--search {
+  
+}
+
+
+.Navbar--post {
+  
+  .Search-toggle {
+    color: $color-grey-dark;
+  }
+}

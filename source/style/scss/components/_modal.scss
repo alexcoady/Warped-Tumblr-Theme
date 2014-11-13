@@ -1,0 +1,63 @@
+.Modal {
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  
+
+  z-index: 150;
+
+  background: $color-grey-mid;
+  background: rgba($color-grey-mid, .98);
+  
+
+  &.has-overflow {
+    overflow-y: scroll;
+  }
+
+  &.is-animating {
+    transition: transform 350ms ease-out;
+  }
+
+  // &.is-entering {
+  //   background: green;
+  // }
+
+  // &.is-leaving {
+  //   background: red;
+  // }
+}
+
+
+.Modal-inner {
+}
+
+.Modal-navbar {
+  transform: translate3d(0px, 200px, 0px);
+  transition: transform 550ms 200ms;
+}
+
+.Modal-tags {
+  transform: translate3d(0px, 300px, 0px);
+  transition: transform 550ms 200ms;
+  border: 1px solid $color-grey-light;
+  border-width: 1px 0px;
+  margin-bottom: 60px;
+}
+
+.Modal-content {
+  transform: translate3d(0px, 400px, 0px);
+  transition: transform 550ms 200ms;
+}
+
+.Modal.is-active {
+
+  .Modal-navbar,  
+  .Modal-tags, 
+  .Modal-content {
+    transform: translate(0);
+  }
+}

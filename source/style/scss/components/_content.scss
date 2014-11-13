@@ -1,0 +1,46 @@
+.Content {
+
+  
+}
+
+
+.Content-inner {
+
+  margin-top: 4 * $spacing;
+}
+
+
+.Content {
+
+
+  h2 {
+    margin-bottom: 6 * $spacing;
+    
+    font-size: 1.8em;
+    line-height: 1.5em;
+    font-style: italic;
+    font-weight: 200;
+    text-align: center;
+  }
+
+  p {
+    margin-bottom: 2 * $spacing;
+    
+    font-size: 1.2em;
+    line-height: 1.5em;
+    letter-spacing: .05em;
+  }
+
+  a {
+    text-decoration: underline;
+    transition: color 150ms;
+  }
+}
+
+.mousemove {
+  .Content {
+    a:hover {
+      color: $color-yellow;
+    }
+  }
+}

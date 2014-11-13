@@ -1,0 +1,36 @@
+.Wrapper {
+    width: 100%;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+/* 800px */
+.Wrapper-inner {
+    max-width: 50em;
+    margin: 0 auto;
+}
+
+/* 960px */
+.Wrapper--large .Wrapper-inner {
+    max-width: 60em;
+}
+
+/* 1200px */
+.Wrapper--xLarge .Wrapper-inner {
+    max-width: 75em;
+}
+
+/* 1280px */
+.Wrapper--jumbo .Wrapper-inner {
+    max-width: 80em;
+}
+
+/* 740px */
+.Wrapper--small .Wrapper-inner {
+    max-width: 46.25em;
+}
+
+/* 500px */
+.Wrapper--xSmall .Wrapper-inner {
+    max-width: 31.25em;
+}

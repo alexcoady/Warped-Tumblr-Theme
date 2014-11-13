@@ -1,0 +1,44 @@
+/**
+ *
+ *
+ */
+.Menu {
+  position: absolute;
+  // position: fixed;
+  top: 0;
+  left: 0;
+  width: $width-menu;
+  height: 100%;
+
+  z-index: 0;
+
+  background-color: $color-grey-light;
+
+  color: $color-grey-dark;
+}
+
+
+.Menu-inner {
+  padding: 1em;
+}
+
+
+.Menu-list {
+
+  margin-top: 3em;
+  text-align: center;
+
+  li {
+    display: block;
+    margin-bottom: 2em;
+  }
+
+  a {
+    text-transform: uppercase;
+    font-weight: bold;
+
+    &:hover {
+      color: blue;
+    }
+  }
+}

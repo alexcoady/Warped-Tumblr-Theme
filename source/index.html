@@ -1,0 +1,231 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+        <title>Alex Coady</title>
+        <link href='http://fonts.googleapis.com/css?family=Merriweather:400,400italic|Oxygen:400,700,300' rel='stylesheet' type='text/css'>        
+        <!--<link href="http://192.168.0.5:3002/style/css/main.css" rel="stylesheet" type="text/css">-->
+        <link href="http://static.tumblr.com/9wdw6xg/h6pnb6t8e/main.css" rel="stylesheet" type="text/css">
+        <style>{CustomCSS}</style>
+    </head>
+    <body>
+        <div class="Chrome">
+            <div class="Chrome-menu">
+                <div class="Menu">
+                    <div class="Menu-inner">
+                        <ul class="Menu-list">
+                            <li><a href="{BlogURL}">Home</a></li>
+                            <li><a href="/tagged/work">Work</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="Chrome-page" id="Chrome-page">
+                <div class="Page{block:PermalinkPage} Page--post{/block:PermalinkPage}{block:IndexPage} Page--index{/block:IndexPage}">
+
+                    <div class="Page-inner">
+
+                        <div class="Page-header">
+                            <header class="Header">
+                                <div class="Header-inner">
+                                    <div class="Header-hamburger">
+                                        <a class="Hamburger">
+                                            <span></span><span></span><span></span>
+                                        </a>
+                                    </div>
+                                    <a href="{BlogURL}" class="Header-logo">
+                                        <?xml version="1.0" encoding="utf-8"?><!DOCTYPE html> <svg version=1.1 id=Layer_1 xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink x=0px y=0px viewbox="6.3 2.2 80.8 27.7" enable-background="new 6.3 2.2 80.8 27.7" xml:space=preserve><path d="M76.1,2.2L81.2,16l-5.1,13.9h-3.6L77.7,16L72.5,2.2H76.1z M23.9,3l-3.4,3.4c-0.6,0.6-0.9,1.3-0.9,2.1v15
+  c0,0.8,0.3,1.5,0.9,2.1l3.4,3.4c0.6,0.6,1.3,0.9,2.1,0.9h1.3v-3.7h-0.7v0c-0.3,0-0.4-0.1-0.6-0.2l-2.4-2.4c-0.2-0.2-0.2-0.4-0.2-0.6
+  V9c0-0.2,0.1-0.4,0.2-0.6L26,6.1c0.2-0.2,0.3-0.3,0.6-0.3h0.7V2.2h-1.3C25.2,2.2,24.5,2.5,23.9,3z M32.6,3c-0.6-0.6-1.3-0.9-2.1-0.9
+  h-1.3v3.7h0.7c0.2,0,0.4,0.1,0.6,0.3l2.4,2.4C33,8.6,33.1,8.8,33.1,9v14c0,0.2-0.1,0.4-0.2,0.6L30.5,26c-0.2,0.2-0.3,0.2-0.6,0.2v0
+  h-0.7v3.7h1.3c0.8,0,1.5-0.3,2.1-0.9l3.4-3.4c0.6-0.6,0.9-1.3,0.9-2.1v-15c0-0.8-0.3-1.5-0.9-2.1L32.6,3z M13.3,26.2
+  c-0.2,0-0.4-0.1-0.6-0.2l-2.4-2.4c-0.2-0.2-0.3-0.4-0.3-0.6V9c0-0.2,0.1-0.4,0.3-0.6l2.4-2.4c0.2-0.2,0.3-0.3,0.6-0.3h1.6V2.2h-2.2
+  c-0.8,0-1.5,0.3-2.1,0.9L7.2,6.5C6.6,7,6.3,7.7,6.3,8.5v15c0,0.8,0.3,1.5,0.9,2.1l3.4,3.4c0.6,0.6,1.3,0.9,2.1,0.9h2.2v-3.7
+  L13.3,26.2L13.3,26.2z M83.8,2.2l-1.6,4h3.4l1.5-4H83.8z M40.3,29.9h3.5l6.6-27.7h-3.5L40.3,29.9z M51.9,29.9h3.3v-3.3h-3.3V29.9z
+   M65.6,2.2h-7.1v3.2H64v21.2h-5.5v3.3h7c0.8,0,2-0.3,2-2.5V4.7C67.5,2.5,66.4,2.2,65.6,2.2z"></svg>
+                                    </a>
+                                </div>
+                            </header>
+                        </div>
+
+                        {block:IndexPage}
+                        <!-- INDEX LISTING -->
+                        <div class="Page-intro">
+                            <div class="Section Section--blue Section--border ColorFun">
+                                <div class="Section-inner">
+                                    <div class="Section-background ColorFun-background"></div>
+                                    <div class="Section-content Island">
+                                        
+                                        {block:TagPage}<h1 class="Page-heading Channel Channel--small">{Tag}</h1>{/block:TagPage}
+                                    
+                                        {block:TagPage}<!--{/block:TagPage}
+                                        <h1 class="Page-heading Channel Channel--small">{Title}</h1>
+                                        <h2 class="Page-subheading Channel Channel--small">{Description}</h2>
+                                        <div class="Page-contact">
+                                          <div class="Contact">
+                                            <a target="_blank" href="http://twitter.com/coadycodes">@coadycodes</a>
+                                            <a href="mailto:alexandercoady@me.com">alexandercoady [at] me [dot] com</a>
+                                          </div>
+                                        </div>
+                                        {block:TagPage}-->{/block:TagPage}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        {block:TagPage}<!--{/block:TagPage}
+                        <div class="Page-about Island Island--xLarge Channel">
+                          <div class="About">
+                            <h3 class="About-title">All my posts are below, or you can <a href="/tagged/work">view my work</a> if you'd like.</h3>
+                          </div>
+                        </div>
+                        {block:TagPage}-->{/block:TagPage}
+
+                        <div class="Page-listing">
+                            <div class="Wrapper Wrapper--large">
+                                <div class="Wrapper-inner">
+                                    <div class="Listing">
+                                        {block:Posts}
+                                        <div class="Listing-item">
+                                            <a href="{Permalink}" class="Preview Preview--{PostType} {block:RebloggedFrom} Preview--reblogged{/block:RebloggedFrom} {block:HasTags}{block:Tags} Preview--tag--{Tag}{/block:Tags}{/block:HasTags}">
+                                                <div class="Preview-inner Preview-background" {block:Photo}style="background-image: url('{PhotoURL-500}')"{/block:Photo}{block:Video}{block:VideoThumbnail}style="background-image: url('{VideoThumbnailURL}')"{/block:VideoThumbnail}{/block:Video} ></div>
+                                                <div class="Preview-inner Preview-content">
+                                                    {block:Caption}<h4 class="Preview-title Island">{PlaintextCaption}</h4>{/block:Caption}
+                                                    <div class="Preview-details">
+                                                      <time class="Preview-date" datetime="{Year}-{MonthNumberWithZero}-{DayOfMonthWithZero} {24HourWithZero}:{Minutes}">{ShortMonth} {DayOfMonth}{DayOfMonthSuffix} {ShortYear}</time>
+                                                      <span class="Preview-type Preview-type--work">Work</span>
+                                                      <span class="Preview-type Preview-type--blog">Blog</span>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </a>
+                                        </div>
+                                        {/block:Posts}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="Page-footer">
+                            <div class="Footer Island Island--xLarge">
+                                <div class="Footer-inner">
+                                    That's all, folks.
+                                </div>
+                            </div>
+                        </div>
+                        {/block:IndexPage}
+                        
+                        {block:PermalinkPage}
+                        {block:Posts}
+                        <!-- PERMALINK POST -->
+                        <div class="Page-post">
+                            <div class="Post Post--{PostType}{block:RebloggedFrom} Post--reblogged{/block:RebloggedFrom}">
+                                
+                                {block:Photo}
+                                <div class="Section Section--black Section--wash Section--image">
+                                    <div class="Section-inner">
+                                        {block:HighRes}
+                                        <div class="Section-background" style="background-image: url('{PhotoURL-HighRes}')"></div>
+                                        {/block:HighRes}
+                                        <div class="Section-content">
+                                            {block:PostSummary}
+                                            <div class="Wrapper Channel">
+                                                <div class="Wrapper-inner">
+                                                    <h1 class="Post-summary">{PostSummary}</h1>
+                                                </div>
+                                            </div>
+                                            {/block:PostSummary}
+                                        
+                                            {block:Date}
+                                            <time class="Section-date Post-date" datetime="{Year}-{MonthNumberWithZero}-{DayOfMonthWithZero} {24HourWithZero}:{Minutes}">{ShortMonth} {DayOfMonth}{DayOfMonthSuffix} {ShortYear}</time>
+                                            {/block:Date}
+                                        </div>
+                                    </div>
+                                </div>
+                                {/block:Photo}
+                                
+                                {block:Photoset}
+                                <div class="Post-photoset">
+                                
+                                    {block:Photos}
+                                    <img src="{PhotoURL-500}" width="{PhotoWidth-500}" height="{PhotoHeight-500}" alt="{PhotoAlt}" />
+                                    {/block:Photos}
+                                </div>
+                                {/block:Photoset}
+                                
+                                {block:Video}
+                                <div class="Post-video">
+                                    {Video-700}
+                                </div>
+                                {/block:Video}
+                                
+                                {block:Caption}
+                                <div class="Post-content">
+                                    <div class="Wrapper Wrapper--small">
+                                        <div class="Wrapper-inner">
+                                            <div class="Post-caption">
+                                                {Caption}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                {/block:Caption}
+
+                                <!-- POST PAGINATION -->
+                                {block:PermalinkPagination}
+                                {block:PreviousPost}
+                                <div class="Post-prevPost">
+                                    <a class="Island Island--xLarge PostPagination PostPagination--prev Wrapper" href="{PreviousPost}">
+                                        <div class="Wrapper-inner">
+                                            <span class="PostPagination-title">{lang:Next post}</span>
+                                            <h4 class="PostPagination-postTitle">{lang:Next post}</h4>
+                                        </div>
+                                    </a>
+                                </div>
+                                {/block:PreviousPost}
+                                {/block:PermalinkPagination} 
+                            </div>
+                        </div>
+                        {/block:Posts}
+                        {/block:PermalinkPage}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>window.twttr = (function (d, s, id) {
+          var t, js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id; js.src= "https://platform.twitter.com/widgets.js";
+          fjs.parentNode.insertBefore(js, fjs);
+          return window.twttr || (t = { _e: [], ready: function (f) { t._e.push(f) } });
+        }(document, "script", "twitter-wjs"));</script>
+            
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+            ga('create', 'UA-42776025-2', 'auto');
+            ga('send', 'pageview');
+        </script>
+        
+        <!--<script src="http://192.168.0.5:3002/scripts/modernizr.js"></script>-->
+        <!--<script src="http://192.168.0.5:3002/scripts/main.js"></script>-->
+        <script src="http://static.tumblr.com/9wdw6xg/iAqnb6t87/main.js"></script>
+        <script src="http://static.tumblr.com/9wdw6xg/CMEnau1rj/modernizr.js"></script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

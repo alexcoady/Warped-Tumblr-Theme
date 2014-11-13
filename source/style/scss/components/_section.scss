@@ -1,0 +1,109 @@
+/**
+ *  Chunk of content in a page
+ *
+ *  @module Section
+ */
+.Section {
+  height: 100%;
+  min-height: 100%;
+}
+
+.Section-inner {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Section-background {
+
+  height: 104%;
+  width: 104%;
+  position: absolute;
+
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  margin: -2%;
+
+  z-index: 50;
+
+  background-size: cover;
+  background-position: center center; 
+}
+
+.Section-content {
+  position: relative;
+  z-index: 100;
+
+  text-align: center;
+}
+
+
+.Section--border {
+  padding: 1em;
+}
+
+
+.Section--image {
+
+  .Section-background {
+    filter: blur(2px);
+  }
+}
+
+.Section--color {
+
+  .Section-background {
+    background-image: none;
+    background: yellowgreen;
+  }
+}
+
+.Section--wash {
+  .Section-background {
+    opacity: 0.6;
+  }
+}
+
+.Section--red {
+
+  color: $color-grey-light;
+
+  .Section-inner {
+    background-color: red; 
+  }
+}
+
+.Section--blue {
+
+  color: $color-grey-light;
+
+  .Section-inner {
+    background-color: blue;
+  }
+}
+
+.Section--green {
+
+  color: $color-grey-light;
+
+  .Section-inner {
+    background-color: green;
+  }
+}
+
+.Section--black {
+
+  color: $color-grey-light;
+
+  .Section-inner {
+    background-color: black;
+  }
+}
