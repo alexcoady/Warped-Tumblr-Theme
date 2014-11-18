@@ -9,22 +9,12 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
-
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 
         <style>{CustomCSS}</style>
     </head>
     <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
-
 
         {block:IndexPage}
         <div class="IndexPage">
@@ -37,7 +27,7 @@
                             <a class="Thumb Thumb--{PostType}{block:RebloggedFrom} Thumb--reblogged{/block:RebloggedFrom}" href="{Permalink}">
                                 {block:Caption}<h3 class="Thumb-title">{Caption}</h3>{/block:Caption}
                                 {block:Photo}<img class="Thumb-photo" src="{PhotoURL-500}" alt="{PhotoAlt}" />{/block:Photo}
-                                {block:Chat}Chat{/block:Chat}
+                                {block:Chat}{block:Title}{Title}{/block:Title}{/block:Chat}
                             </a>
                         </li>
                     {/block:Posts}
@@ -54,13 +44,14 @@
                 {block:Posts}
                 <div class="Post Post--{PostType}{block:RebloggedFrom} Post--reblogged{/block:RebloggedFrom}">
 
+                    {block:Title}<div class="Post-title">{Title}</div>{/block:Title}
+                    {block:Caption}<div class="Post-caption">{Caption}</div>{/block:Caption}
+
                     {block:Text}
-                        {block:Title}<h1 class="Post-title">{Title}</h1>{/block:Title}
                         <div class="Post-body">{Body}</div>
                     {/block:Text}
 
                     {block:Photo}
-                    {block:Caption}<div class="Post-caption">{Caption}</div>{/block:Caption}
                     <div class="Post-photo">
                         <img src="{PhotoURL-500}" alt="{PhotoAlt}" width="{PhotoWidth-500}" height="{PhotoHeight-500}" style="{block:HighRes}display:none;{/block:HighRes}" />
                         {block:HighRes}<img src="{PhotoURL-HighRes}" alt="{PhotoAlt}" width="{PhotoWidth-HighRes}" height="{PhotoHeight-HighRes}" />{/block:HighRes}
@@ -91,7 +82,6 @@
                     {block:Panorama} {/block:Panorama}
 
                     {block:Photoset}
-                    {block:Caption}<div class="Post-caption">{Caption}</div>{/block:Caption}
                     <div class="Post-photoset">
                         <div class="Photoset">
                             {block:Photos}
@@ -138,7 +128,6 @@
                     {/block:Link}
 
                     {block:Chat}
-                    {block:Title}<div class="Post-title">{Title}</div>{/block:Title}
                     <div class="Post-chat">
                         <div class="Chat">
                             {block:Lines}
@@ -154,7 +143,6 @@
                     {block:Audio}
                     <div class="Post-audio">
                         <div class="Audio">
-                            {block:Caption}<h1 class="Post-caption">{Caption}</h1>{/block:Caption}
 
                             {block:AlbumArt}
                             <div class="Audio-albumArt">
@@ -198,9 +186,38 @@
                     </div>
                     {/block:Audio}
 
-                    {block:Video} {/block:Video}
+                    {block:Video}
+                    <div class="Post-video">
+                        <div class="Video">
 
-                    {block:Answer} {/block:Answer}
+                            {block:VideoThumbnail}
+                            <div class="Video-thumbnail">
+                                <img src="{VideoThumbnailURL" alt="" />
+                            </div>
+                            {/block:VideoThumbnail}
+
+                            {block:VideoThumbnails}
+                            <div class="Video-thumbnail">
+                                <img src="{VideoThumbnailURL" alt="" />
+                            </div>
+                            {/block:VideoThumbnails}
+
+                            <div class="Video-embed">{VideoEmbed-700}</div>
+                            <div class="Video-playcount">{FormattedPlayCount}</div>
+                        </div>
+                    </div>
+                    {/block:Video}
+
+                    {block:Answer}
+                    <div class="Post-answer">
+                        <div class="Answer">
+                            <h1 class="Answer-question">{Question}</h1>
+                            <h2 class="Answer-answer">{Answer}</h2>
+
+                            <div class="Answer-asker">{Asker}</div>
+                        </div>
+                    </div>
+                    {/block:Answer}
 
                 </div>
                 {/block:Posts}
