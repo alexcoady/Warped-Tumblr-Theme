@@ -1,0 +1,116 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+        <title>{Title}</title>
+        <link href="http://192.168.10.28:3002/style/css/main.css" rel="stylesheet" type="text/css">
+        <style>{CustomCSS}</style>
+    </head>
+    <body>
+        <div class="Chrome">
+            <div class="Chrome-page" id="Chrome-page">
+                <div class="Page{block:PermalinkPage} Page--post{/block:PermalinkPage}{block:IndexPage} Page--index{/block:IndexPage}">
+
+                    <div class="Page-inner">
+
+                        {block:IndexPage}
+                        <div class="Listing">
+                            {block:Posts}
+                            <a href="{Permalink}" class="Thumbnail Thumbnail--{PostType} {block:RebloggedFrom} Thumbnail--reblogged{/block:RebloggedFrom} {block:HasTags}{block:Tags} Thumbnail--tag--{Tag}{/block:Tags}{/block:HasTags}">                                    {block:Caption}<h4 class="">{PlaintextCaption}{/block:Caption}
+                                {block:Caption}{Caption}{/block:Caption}
+                            </a>
+                            {/block:Posts}
+                        </div>
+                        {/block:IndexPage}
+                        
+                        {block:PermalinkPage}
+                        {block:Posts}
+                        <!-- PERMALINK POST -->
+                        <div class="Page-post">
+                            <div class="Post Post--{PostType}{block:RebloggedFrom} Post--reblogged{/block:RebloggedFrom}">
+                            
+                                <div class="Post-imagery">
+                                    {block:Photo}
+                                    <div class="Post-photo">
+                                        {block:HighRes}
+                                            <img src="{PhotoURL-HighRes}" alt="{PhotoAlt}" />
+                                        {/block:HighRes}
+                                    </div>
+                                    {/block:Photo}
+                                    
+                                    {block:Photoset}
+                                    <div class="Post-photoset">
+                                        {block:Photos}
+                                        <img src="{PhotoURL-500}" width="{PhotoWidth-500}" height="{PhotoHeight-500}" alt="{PhotoAlt}" />
+                                        {/block:Photos}
+                                    </div>
+                                    {/block:Photoset}
+                                </div>
+
+                                <div class="Post-content">
+                                    {block:Caption}
+                                    <div class="Post-caption">
+                                        {Caption}        
+                                    </div>
+                                    {/block:Caption}
+                                </div>
+                                
+                                {block:Video}
+                                <div class="Post-video">
+                                    {Video-700}
+                                </div>
+                                {/block:Video}
+
+                                <!-- POST PAGINATION -->
+                                {block:PermalinkPagination}
+                                <div class="Post-pagination">
+                                    {block:NextPost}
+                                    <a class="" href="{NextPost}">{lang:Next post}</a>
+                                    {/block:NextPost}
+                                    {block:PreviousPost}
+                                    <a class="" href="{PreviousPost}">{lang:Previous post}</a>
+                                    {/block:PreviousPost}
+                                </div>
+                                {/block:PermalinkPagination} 
+                            </div>
+                        </div>
+                        {/block:Posts}
+                        {/block:PermalinkPage}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>window.twttr = (function (d, s, id) {
+          var t, js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id; js.src= "https://platform.twitter.com/widgets.js";
+          fjs.parentNode.insertBefore(js, fjs);
+          return window.twttr || (t = { _e: [], ready: function (f) { t._e.push(f) } });
+        }(document, "script", "twitter-wjs"));</script>
+            
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+            ga('create', 'UA-42776025-2', 'auto');
+            ga('send', 'pageview');
+        </script>
+        
+        <script src="http://static.tumblr.com/9wdw6xg/CMEnau1rj/modernizr.js"></script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

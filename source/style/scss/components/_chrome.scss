@@ -3,21 +3,4 @@
  *
  *
  */
-.Chrome {
-	height: 100%;
-}
-
-
-.Chrome-page {
-	height: 100%;
-
-  transition: transform .35s; 
-
-  html.menu-active & {
-    transform: translate3d($width-menu, 0, 0);
-  }
-}
-
-.Chrome-menu {
-  
-}
+.Chrome {}

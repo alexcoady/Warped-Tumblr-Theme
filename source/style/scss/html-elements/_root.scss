@@ -1,0 +1,16 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body {}
+
+body {
+  // background-color: $color-grey-light;
+  // color: $color-grey-light;
+  font-size: 16px;
+  font-family: $font-sans;
+  line-height: 1.4em;
+
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+}
